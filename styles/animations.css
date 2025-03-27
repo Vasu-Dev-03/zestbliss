@@ -1,0 +1,645 @@
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce 3s infinite;
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+/* Slide In From Bottom */
+@keyframes slideInBottom {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-bottom {
+  animation: slideInBottom 0.5s ease-out;
+}
+
+/* Scale Animation */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.5s ease-out;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Staggered Children Animation Delays */
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+.stagger-children > *:nth-child(7) { animation-delay: 0.7s; }
+.stagger-children > *:nth-child(8) { animation-delay: 0.8s; }
+.stagger-children > *:nth-child(9) { animation-delay: 0.9s; }
+.stagger-children > *:nth-child(10) { animation-delay: 1s; }
+
+/* Basic Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Special Effects */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* New Animations */
+@keyframes bounceOnce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-15px); }
+  80% { transform: translateY(-5px); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes fadeInStaggered {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility Animation Classes */
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-slide-in-bottom {
+  animation: slideInBottom 0.6s ease forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.5s ease forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-gradient {
+  animation: gradientShift 8s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite linear;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+}
+
+.animate-bounce-once {
+  animation: bounceOnce 1s ease-out forwards;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+.animate-expand-width {
+  animation: expandWidth 0.8s ease-out forwards;
+}
+
+/* Delays */
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* Staggered Children Animation */
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeInStaggered 0.5s ease forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Animation Duration Variants */
+.duration-faster { animation-duration: 0.3s; }
+.duration-fast { animation-duration: 0.5s; }
+.duration-normal { animation-duration: 1s; }
+.duration-slow { animation-duration: 2s; }
+.duration-slower { animation-duration: 3s; }
+
+/* Animation Fills */
+.fill-forwards { animation-fill-mode: forwards; }
+.fill-backwards { animation-fill-mode: backwards; }
+.fill-both { animation-fill-mode: both; }
+
+/* Animation Timing Functions */
+.ease-linear { animation-timing-function: linear; }
+.ease-in { animation-timing-function: ease-in; }
+.ease-out { animation-timing-function: ease-out; }
+.ease-in-out { animation-timing-function: ease-in-out; }
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Button animations */
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.pulse-shadow {
+  animation: pulse-shadow 2s infinite;
+}
+
+/* Shimmer effect for loading states */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Staggered entrance animation for lists */
+.stagger-in > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: staggerFadeIn 0.5s forwards;
+}
+
+.stagger-in > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger-in > *:nth-child(2) { animation-delay: 0.10s; }
+.stagger-in > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger-in > *:nth-child(4) { animation-delay: 0.20s; }
+.stagger-in > *:nth-child(5) { animation-delay: 0.25s; }
+.stagger-in > *:nth-child(6) { animation-delay: 0.30s; }
+.stagger-in > *:nth-child(7) { animation-delay: 0.35s; }
+.stagger-in > *:nth-child(8) { animation-delay: 0.40s; }
+.stagger-in > *:nth-child(9) { animation-delay: 0.45s; }
+.stagger-in > *:nth-child(10) { animation-delay: 0.50s; }
+.stagger-in > *:nth-child(11) { animation-delay: 0.55s; }
+.stagger-in > *:nth-child(12) { animation-delay: 0.60s; }
+.stagger-in > *:nth-child(13) { animation-delay: 0.65s; }
+.stagger-in > *:nth-child(14) { animation-delay: 0.70s; }
+.stagger-in > *:nth-child(15) { animation-delay: 0.75s; }
+.stagger-in > *:nth-child(16) { animation-delay: 0.80s; }
+.stagger-in > *:nth-child(17) { animation-delay: 0.85s; }
+.stagger-in > *:nth-child(18) { animation-delay: 0.90s; }
+.stagger-in > *:nth-child(19) { animation-delay: 0.95s; }
+.stagger-in > *:nth-child(20) { animation-delay: 1.00s; }
+
+@keyframes staggerFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Micro-interactions */
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-3px);
+}
+
+.hover-grow {
+  transition: transform 0.3s ease;
+}
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+/* Notification dot pulse */
+@keyframes notification-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgba(220, 38, 38, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+  }
+}
+
+.notification-pulse {
+  animation: notification-pulse 2s infinite;
+}
+
+/* TOY-THEMED ANIMATIONS */
+
+/* Toy Box Reveal Animation */
+@keyframes toyBoxReveal {
+  0% { 
+    transform: translateY(100%); 
+    opacity: 0; 
+  }
+  60% { 
+    transform: translateY(-10%); 
+    opacity: 1; 
+  }
+  80% { 
+    transform: translateY(5%); 
+  }
+  100% { 
+    transform: translateY(0); 
+  }
+}
+
+.toy-box-reveal {
+  animation: toyBoxReveal 0.8s ease-out forwards;
+}
+
+.toy-box-reveal-delay-1 {
+  animation: toyBoxReveal 0.8s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.toy-box-reveal-delay-2 {
+  animation: toyBoxReveal 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.toy-box-reveal-delay-3 {
+  animation: toyBoxReveal 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Building Block Loading Animation */
+@keyframes blockRise {
+  0% { 
+    transform: translateY(20px); 
+    opacity: 0; 
+  }
+  100% { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+.building-block {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  border-radius: 2px;
+  background-color: currentColor;
+}
+
+.building-block-1 {
+  animation: blockRise 0.4s ease-out infinite alternate;
+  animation-delay: 0s;
+}
+
+.building-block-2 {
+  animation: blockRise 0.4s ease-out infinite alternate;
+  animation-delay: 0.1s;
+}
+
+.building-block-3 {
+  animation: blockRise 0.4s ease-out infinite alternate;
+  animation-delay: 0.2s;
+}
+
+.building-block-4 {
+  animation: blockRise 0.4s ease-out infinite alternate;
+  animation-delay: 0.3s;
+}
+
+/* Toy Train Navigation Animation */
+@keyframes trainMove {
+  0% { 
+    transform: translateX(-5px); 
+  }
+  100% { 
+    transform: translateX(5px); 
+  }
+}
+
+.toy-train-nav-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.toy-train-nav-item:hover {
+  transform: translateY(-3px);
+}
+
+.toy-train-nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, transparent, currentColor, transparent);
+  opacity: 0;
+  transform: scaleX(0.7);
+  transition: all 0.3s ease;
+}
+
+.toy-train-nav-item:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
+  animation: trainMove 0.7s ease-in-out infinite alternate;
+}
+
+/* Age Range Slider Animation */
+@keyframes rulerGrow {
+  0% { 
+    transform: scaleX(0); 
+    transform-origin: left;
+  }
+  100% { 
+    transform: scaleX(1); 
+    transform-origin: left;
+  }
+}
+
+.ruler-grow {
+  animation: rulerGrow 1.5s ease-out forwards;
+}
+
+/* Toy Carousel Animation */
+@keyframes ferrisWheel {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+.ferris-wheel-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.ferris-wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: ferrisWheel 30s linear infinite;
+}
+
+.ferris-item {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: -30px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform-origin: center center;
+  transition: all 0.3s ease;
+}
+
+.ferris-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+} 
